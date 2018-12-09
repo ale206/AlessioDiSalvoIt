@@ -1,0 +1,66 @@
+﻿@using TaechIdeas.Alessiodisalvo.Controllers
+@{
+    Layout = null;
+}
+
+<div class="st-menu st-effect-1">
+    <div class="fullwidth site-infos">
+        <div class="logo">
+            <a href="@Url.Action("Index", "Home")">
+                <img src="/Content/Images/alessio-di-salvo.png" alt="Travelogue">
+            </a>
+        </div>
+        <h3 class="section-title">alessiodisalvo.it</h3>
+        <span class="section-description">@Localization.Localize("Description")</span>
+        <span class="section-description"><a href="/it/Home/Index">IT</a> - <a href="/en/Home/Index">EN</a></span>
+    </div>
+    <nav class="fullwidth sidebar-navigation-menu">
+        <ul>
+            @*<li><a href="/it/Home/Index"><i class="fa fa-flag-o"></i>IT</a> - <a href="/en/Home/Index"><i class="fa fa-home"></i>EN</a></li>*@
+            <li>
+                <a href="@Url.Action("Index", "Home")">
+                    <i class="fa fa-home"></i>@Localization.Localize("Home")</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Contact")">
+                    <i class="fa fa-envelope-o"></i>@Localization.Localize("Contact")</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Curriculum")">
+                    <i class="fa fa-pencil-square-o"></i>@Localization.Localize("Curriculum")</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "Gallery")">
+                    <i class="fa fa-picture-o"></i>@Localization.Localize("Gallery")</a>
+            </li>
+            <li>
+                <a href="@Url.Action("Index", "AboutMe")">
+                    <i class="fa fa-heart"></i>@Localization.Localize("About")</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="fullwidth sidebar-social-networks">
+        <ul>
+            <li class="facebook">
+                <a href="https://www.facebook.com/ale206" target="_blank">
+                    <i class="fa fa-facebook"></i>
+                </a>
+            </li>
+            <li class="twitter">
+                <a href="https://www.twitter.com/schiticchio" target="_blank">
+                    <i class="fa fa-twitter"></i>
+                </a>
+            </li>
+            <li class="linkedin">
+                <a href="http://uk.linkedin.com/pub/alessio-di-salvo/12/265/122" target="_blank">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </li>
+            @*<li class="mycookin"><a href="#"><i class="fa fa-pinterest"></i></a></li>*@
+        </ul>
+    </div>
+    <div class="fullwidth bottom-links">
+        <p>&copy; @DateTime.Now.Year</p>
+    </div>
+</div>

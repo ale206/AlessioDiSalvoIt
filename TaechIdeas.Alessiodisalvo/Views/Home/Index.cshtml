@@ -1,0 +1,163 @@
+﻿@using TaechIdeas.Alessiodisalvo.Controllers
+@model TaechIdeas.Alessiodisalvo.Models.MyCulture
+@{
+    ViewBag.Title = "";
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/js/transition.js")"></script>
+
+    <script>
+        $('body').addClass("homepage index-home index");
+    </script>
+
+    <script src="@Url.Content("~/Scripts/js/_HomePageScript.js")"></script>
+}
+<div id="container" class="container intro-effect-grid">
+
+    <a class="cd-primary-nav-trigger link-it" id="linkit" href="/it/Home/Index">
+        <span class="language-text">IT</span>
+    </a>
+
+    <a class="cd-primary-nav-trigger link-en" id="linken" href="/en/Home/Index">
+        <span class="language-text">EN</span>
+    </a>
+
+    <a class="cd-primary-nav-trigger" id="trigger-menu" href="#">
+        <span class="cd-menu-icon"></span>
+    </a>
+
+    <header class="header">
+        <div class="bg-img">
+            <img class="async-image hide" src="/Content/Images/Alessio-Mountain.jpg" data-src="/Content/Images/Alessio-Mountain.jpg" alt=""/>
+
+        </div>
+        <div class="title hidden" id="title">
+            <h1>Alessio Di Salvo .it</h1>
+        </div>
+        <div class="overlay hidden" id="overlay"></div>
+    </header>
+
+    <button class="trigger scroll-down-pulse">
+        <span>Trigger</span></button>
+
+    <article class="content">
+        <div class="">
+            <div class="grid">
+                <figure class="single-item-effect big">
+                    <img src="/Content/Images/AboutMe.jpg" alt="@Localization.Localize("Biography")"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>@Localization.Localize("Hello") @Localization.Localize("MyNameIs")</h2>
+                            <p>@Localization.Localize("Biography")</p>
+                            <a href="@Url.Action("Index", "AboutMe")"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="single-item-effect small">
+                    <img src="/Content/Images/AlessioDiSalvo480.JPG" alt="@Localization.Localize("Curriculum")"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>@Localization.Localize("Hire")</h2>
+                            <p>@Localization.Localize("LookAt")</p>
+                            <a href="@Url.Action("Index", "Curriculum")"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="single-item-effect small">
+                    <img src="/Content/PhotoCollection/480/PALERMO/PALERMO_00005.jpg" alt="@Localization.Localize("Contact")"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>@Localization.Localize("ContactMe")</h2>
+                            <p>@Localization.Localize("ContactMeSub")</p>
+                            <a href="@Url.Action("Index", "Contact")"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+
+                <figure class="single-item-effect big">
+                    <img src="/Content/Images/MyCookin.jpg" alt="MyCookin"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>MyCookin.com</h2>
+                            <p>@Localization.Localize("ContactMeSub")</p>
+                            <a href="http://www.mycookin.com" target="_blank"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="single-item-effect small">
+                    <img src="/Content/Images/godimentale-480x320.jpg" alt="Godimentale"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>Godimentale.com</h2>
+                            <p>@Localization.Localize("GodimentaleDesc")</p>
+                            <a href="http://www.godimentale.com" target="_blank">View more</a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="single-item-effect small">
+                    <img src="/Content/Images/Facebook.jpg" alt="Facebook"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>@Localization.Localize("FbTitle")</h2>
+                            <p>@Localization.Localize("FbDesc")</p>
+                            <a href="https://www.facebook.com/ale206" target="_blank"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="single-item-effect small">
+                    <img src="/Content/Images/twitter_london.jpg" alt="Twitter"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>@Localization.Localize("TwitterTitle")</h2>
+                            <p>@Localization.Localize("TwitterDesc")</p>
+                            <a href="https://www.twitter.com/schiticchio" target="_blank"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="single-item-effect small">
+                    <img src="/Content/Images/Linkedin.jpg" alt="Linkedin"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>@Localization.Localize("LinkedinTitle")</h2>
+                            <p>@Localization.Localize("LinkedinDesc")</p>
+                            <a href="http://uk.linkedin.com/pub/alessio-di-salvo/12/265/122" target="_blank"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="single-item-effect big">
+                    <img src="/Content/Images/PhotoGallery.jpg" alt="Photo Gallery"/>
+                    <figcaption>
+                        <div class="figcaption-border">
+                            <h2>@Localization.Localize("Gallery")</h2>
+                            <p>@Localization.Localize("GalleryDesc")</p>
+                            <a href="@Url.Action("Index", "Gallery")"></a>
+                            <div class="figure-overlay"></div>
+                        </div>
+                    </figcaption>
+                </figure>
+
+            </div>
+        </div>
+    </article>
+
+</div><!-- /container -->
+<!-- ### Sidebar Menu ##################################################################### -->
+<div id="st-container" class="st-container"></div>
+<div id="infinitescroll"></div>
+
+<!--[if IE]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+@*<a href="#" class="back-to-top">Top</a>*@
+@*</div>*@

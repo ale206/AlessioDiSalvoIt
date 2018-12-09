@@ -1,0 +1,167 @@
+﻿@using TaechIdeas.Alessiodisalvo.Controllers
+@model TaechIdeas.Alessiodisalvo.Models.Gallery
+@{
+    ViewBag.Title = "Gallery";
+}
+
+@section Css{
+    <link rel="stylesheet" type="text/css" href="/Content/Css/gallery.css"/><!-- CSS: Gallery CSS -->
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/js/transition.js")"></script>
+
+    <script>
+        $('body').addClass("homepage index-home");
+    </script>
+
+
+    <script src="~/Scripts/js/modernizr.custom.gallery.js"></script>
+
+    <script src="~/Scripts/js/cbpGridGallery.js"></script>
+    <script src="~/Scripts/js/isotope/modernizr-isotope.js"></script>
+    <script src="~/Scripts/js/isotope/isotope.pkgd.min.js"></script>
+    <script src="~/Scripts/js/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="@Url.Content("~/Scripts/js/_GalleryScript.js")"></script>
+}
+
+<a class="cd-primary-nav-trigger" id="trigger-menu" href="#">
+    <span class="cd-menu-icon"></span>
+</a>
+
+<div id="container" class="container intro-effect-jam3">
+    <div id="travelogue-search" class="travelogue-search">
+    </div>
+
+    <header class="header">
+        <div class="bg-img">
+            <img class="async-image hide" src="/Content/PhotoCollection/1280/London/LONDON_00047.JPG" data-src="/Content/PhotoCollection/1280/London/LONDON_00047.JPG" alt="@Localization.Localize("Gallery")"/>
+        </div>
+        <div class="title hidden" id="title">
+            <h1>@Html.DisplayFor(gallery => gallery.Name)</h1>
+        </div>
+        <div class="overlay hidden" id="overlay"></div>
+    </header>
+
+    <button class="trigger scroll-down-pulse">
+        <span>Trigger</span></button>
+
+    <article class="content">
+        <div class="">
+            <div id="grid-gallery" class="grid-gallery">
+                <section class="grid-wrap">
+                    <div class="grid" id="isotope-container">
+
+
+                        @foreach (var room in Model.Rooms)
+                        {
+                            foreach (var pic in room.Pictures)
+                            {
+                                <figure class="single-item-effect small @room.Name">
+                                    <img src="@pic.RelativePath480" alt="@pic.Name"/>
+                                    <figcaption>
+                                        <div class="figcaption-border">
+                                            <div class="figure-overlay"></div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            }
+                        }
+
+                    </div>
+                </section><!-- // grid-wrap -->
+                <section class="slideshow">
+                    <ul>
+                        @foreach (var room in Model.Rooms)
+                        {
+                            foreach (var pic in room.Pictures)
+                            {
+                                <li class="@room.Name">
+                                    <figure>
+                                        <figcaption>
+                                            <h2>@pic.Name</h2>
+                                        </figcaption>
+                                        <img src="@pic.RelativePath1280" alt="@pic.Name"/>
+                                    </figure>
+                                </li>
+                            }
+                        }
+
+
+
+                    </ul>
+                    <nav class="gallery-nav">
+                        <div class="prev-container">
+                            <ul>
+                                @foreach (var room in Model.Rooms)
+                                {
+                                    foreach (var pic in room.Pictures)
+                                    {
+                                        <li class="@room.Name">
+                                            <div>
+                                                <p class="gallery-title">@pic.Name</p>
+                                            </div>
+                                            <img src="@pic.RelativePath90">
+                                        </li>
+                                    }
+                                }
+
+
+                            </ul>
+                            <span class="icon nav-prev"></span>
+                        </div>
+                        <div class="nex-container">
+                            <ul>
+                                @foreach (var room in Model.Rooms)
+                                {
+                                    foreach (var pic in room.Pictures)
+                                    {
+                                        <li class="@room.Name">
+                                            <div>
+                                                <p class="gallery-title">@pic.Name</p>
+                                            </div>
+                                            <img src="@pic.RelativePath90">
+                                        </li>
+                                    }
+                                }
+
+
+                            </ul>
+                            <span class="icon nav-next"></span>
+                        </div>
+                        <span class="icon nav-close"></span>
+                    </nav>
+                    <div class="info-keys icon"></div>
+                </section><!-- // slideshow -->
+            </div><!-- // grid-gallery -->
+        </div>
+    </article>
+</div><!-- /container -->
+<!-- ### Sidebar Menu ##################################################################### -->
+<div id="st-container" class="st-container"></div>
+
+<!-- Filter Button -->
+
+<div id="filter-nav">
+    <nav id="filter-main-nav">
+        <ul>
+            <li>
+                <a href="#" data-filter="*">All</a>
+            </li>
+
+            @* Elenco dei nomi delle cartelle*@
+            @foreach (var room in Model.Rooms)
+            {
+                <li>
+                    <a href="#" data-filter=".@room.Name">@room.Name</a>
+                </li>
+            }
+
+
+            <li class="filter-title">Filters</li>
+        </ul>
+    </nav>
+    <a href="#" class="filter-nav-trigger">
+        <span class="fa fa-filter"></span></a>
+</div>

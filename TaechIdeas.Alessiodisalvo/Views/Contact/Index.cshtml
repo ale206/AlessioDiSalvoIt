@@ -1,0 +1,81 @@
+﻿@using TaechIdeas.Alessiodisalvo.Controllers
+@{
+    ViewBag.Title = "Contact";
+}
+
+@section Scripts
+{
+    <script src="@Url.Content("~/Scripts/js/modernizr.form.custom.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/stepsForm.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/contact.js")"></script>
+    <script src="@Url.Content("~/Scripts/js/jquery.form.js")"></script>
+
+    <script>
+        $('body').addClass("index-contact");
+    </script>
+
+}
+
+<div id="container" class="container">
+
+    <a class="cd-primary-nav-trigger" id="trigger-menu" href="#">
+        <span class="cd-menu-icon"></span>
+    </a>
+
+    <div id="travelogue-search" class="travelogue-search">
+    </div>
+
+    <header class="header">
+        <div class="bg-img">
+            <img class="async-image hide" src="" data-src="/Content/PhotoCollection/1280/PALERMO/PALERMO_00005.jpg" alt=""/>
+            <div class="overlay hidden" id="overlay"></div>
+        </div>
+        <div class="title">
+            <h1>
+                <span>@Localization.Localize("ContactMe")</span>
+            </h1>
+            <p class="subline">@Localization.Localize("CotactMeSub")</p>
+
+            <div>
+                <form id="theForm" class="simform" autocomplete="off">
+                    @Html.AntiForgeryToken()
+
+                    <div class="simform-inner">
+                        <ol class="questions">
+                            <li>
+                                <span><label for="name">@Localization.Localize("Name")</label></span>
+                                <input id="q1" class="focus-me" name="name" type="text"/>
+                            </li>
+                            <li>
+                                <span><label for="email">@Localization.Localize("Email")</label></span>
+                                <input id="q2" class="focus-me" name="email" type="text"/>
+                            </li>
+                            <li>
+                                <span><label for="subject">@Localization.Localize("Talk")</label></span>
+                                <input id="q3" class="focus-me" name="subject" type="text"/>
+                            </li>
+                            <li>
+                                <span><label for="details">@Localization.Localize("Details")</label></span>
+                                <textarea id="q4" name="details" class="focus-me"></textarea>
+                            </li>
+                        </ol><!-- /questions -->
+                        <button class="submit" name="submit_contact" type="submit">@Localization.Localize("Send")</button>
+                        <div class="controls">
+                            <button class="next"></button>
+                            <div class="progress"></div>
+                            <span class="number">
+                                <span class="number-current"></span>
+                                <span class="number-total"></span>
+                            </span>
+                            <span class="error-message"></span>
+                        </div><!-- / controls -->
+                    </div><!-- /simform-inner -->
+                    <span class="final-message"></span>
+                </form><!-- /simform -->
+
+            </div>
+        </div>
+    </header>
+</div><!-- /container -->
+<!-- ### Sidebar Menu ##################################################################### -->
+<div id="st-container" class="st-container"></div>

@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<lang>
+  <item id="lng">EN_GB</item>
+  <item id="lngLNG">en</item>
+  <item id="lngName">English</item>
+  <item id="charset">UTF-8</item>
+  <item id="dir">ltr</item>
+
+  <!--HOME-->
+  <item id="Hello">Hello!</item>
+  <item id="MyNameIs">my name is...</item>
+  <item id="Biography">Biography</item>
+  <item id="Hire">Hire me</item>
+  <item id="LookAt">Have a look at my Curriculum</item>
+  <item id="ContactMe">Contact Me</item>
+  <item id="ContactMeSub">Don't be shy</item>
+  <item id="MyCookinDesc">A new social network about food</item>
+  <item id="GodimentaleDesc">Personal blog</item>
+  <item id="FbTitle">Facebook Profile</item>
+  <item id="FbDesc">Yes, I have a Fb profile</item>
+  <item id="TwitterTitle">Twitter Profile</item>
+  <item id="TwitterDesc">Some Tweet, Sometimes</item>
+  <item id="LinkedinTitle">Me and Linkedin</item>
+  <item id="LinkedinDesc">For professional contacts</item>
+  <item id="GalleryDesc">More than a simple passion</item>
+
+  <!--NAV-->
+  <item id="Home">Home</item>
+  <item id="Curriculum">Curriculum</item>
+  <item id="Gallery">Gallery</item>
+  <item id="Contact">Contact</item>
+  <item id="About">About</item>
+  <item id="Description">Programmer, Photographer, Traveller</item>
+
+  <!--CONTACT-->
+  <item id="Name">What's your name?</item>
+  <item id="Email">What's your email address?</item>
+  <item id="Talk">What do you want to talk about?</item>
+  <item id="Details">Can you give me more details?</item>
+  <item id="Send">Send</item>
+
+  <!--CURRICULUM-->
+  <item id="cvTitle">Experienced Project Developer of Complex Web Applications</item>
+  <item id="cvSummary1">H</item>
+  <item id="cvSummary2">
+    ighly motivated and very customer focused. I go to great lengths to get the right results. I am willing to travel, and I adapt quickly to the requirements of both employers and customers.  Flexible working within a team structure, or alone as necessary.
+    Looking for wider challenges that build upon my long experience with developing complex active web applications.
+  </item>
+  <item id="SkillsTitle">Skills and Abilities</item>
+  <item id="SkillsDesc1">S</item>
+  <item id="SkillsDesc2">pecialised in Web Programming IsoLanguages (ASP .NET C# 4.5), WCF Services, Databases (SQL Server, MySQL) and Software Analysis.  I’m also experienced in JavaScript and jQuery.</item>
+  <item id="EducationTitle">Education</item>
+  <item id="Education1">University of Palermo, Italy, 2012</item>
+  <item id="Education2">Bachelor’s degree in Computer Engineering</item>
+  <item id="Education3">Thesis Title:“Project Management and Time Reporting for Large Retail Sales and Distribution”.</item>
+  <item id="Education4">University of Valencia, Spain, 2007</item>
+  <item id="Education5">Erasmus Student in Computer Engineering</item>
+  <item id="Education6">3D drawing of America's Cup Port with Google SketchUp</item>
+  <item id="LanguagesTitle">Languages</item>
+  <item id="Language1">Italian - Fluent</item>
+  <item id="Language2">Spanish - Fluent</item>
+  <item id="Language3">English - Very Good</item>
+  <item id="Quote">My career aspirations are to work in a Bank or Finance Company, to follow a SCRUM framework for development, to manage a team and be the Project Manager</item>
+  <item id="ExpTitle">Experience</item>
+  <item id="Kigotitle">Software Engineer / Technical Lead (March 2017 - Today)</item>
+  <item id="KigoDesc1">I</item>
+  <item id="KigoDesc2">am leading a team responsible for the development of the new Channel Manager, part of the Kigo Software that allows users to configure listings, and synchronise them through our partner channels (Booking.com, Airbnb, HomeAway, etc.) thanks to dedicated API.</item>
+  <item id="Kigo1"> Tech Lead in an international team made up of 7 people. Mentor for junior developers. Responsible for code reviews and merges. Responsible for the architecture of the new Channel Manager. Support to Product Managers to assign tasks and estimate time. Improved skills in:</item>
+  <item id="Kigo2">.NET Core, C# 4.6.1, T-SQL, Moq, XUnit, REST API, Git, Visual Studio 2017, Postman, Swagger, Jira, Confluence, TeamCity, IoC</item>
+  <item id="Adazzletitle">Technical Lead (March 2016 - February 2017)</item>
+  <item id="AdazzleDesc1">I</item>
+  <item id="AdazzleDesc2">am a tech Lead in a team made up of 9 people Mentor for junior developers.</item>
+  <item id="Adazzle1">Responsible for code reviews. Responsible for the main architecture on projects related to the team. Support to Product Managers to assign tasks and estimate time. Improved skills in:</item>
+  <item id="Adazzle2">C# 4.5, T-SQL, AutoFac, Moq, NUnit, ReactJs, Redux, Jasmine, Gulp, Npm, JSX/ES6, BabelJs, REST API, Facebook Marketing API, Git Migration, Visual Studio 2015, Visual Studio Code, Postman, Jira, Confluence, AppVeyor, Git, GhostInspector, Zendesk</item>
+  <item id="Orwelltitle">Financial Software Developer (March 2014 - December 2015)</item>
+  <item id="OrwellDesc1">I </item>
+  <item id="OrwellDesc2">have improved my knowledge in ASP .NET C# 4.5, WCF Service Applications, Entity Framework 6.1, Sql Server 2012, SOAP and REST API.</item>
+  <item id="Orwell1">Developer of a Payment Gateway Service to provide inbound and outbound payments for FIAT Currencies (Sepa, Bacs, Chaps, SWIFT and Faster Payments channels) and Crypto-Currencies (Bitcoin).</item>
+  <item id="Orwell2">WCF services for vPOS, a virtual pos application for iOS.</item>
+  <item id="KiwariTitle">Software Developer (November 2012 - November 2013)</item>
+  <item id="KiwariDesc1">I </item>
+  <item id="KiwariDesc2">have worked for customers such as Alitalia, Air France and Venere for different web applications and web forms to acquire user data.</item>
+  <item id="Kiwari1">Great experience in working in a team.</item>
+  <item id="Kiwari2">Iterative adaptation and re-use of code to support customer requirements.</item>
+  <item id="Kiwari3">Re-development and improvement of Buonmercato, a web application in C# MVC for discount sharing.</item>
+  <item id="AuchanTitle">Intranet Developer and Administrator (August 2008 - November 2012)</item>
+  <item id="AuchanDesc1">I </item>
+  <item id="AuchanDesc2">was responsible for the intranet within Auchan Italy, a web portal for internal communication. Developed in ASP VBScript, C# 4.0, JavaScript, jQuery.</item>
+  <item id="Auchan1">Experience in working alone and in a team.</item>
+  <item id="Auchan2">Client facing customer liaison to discover requirements and plan implementation.</item>
+  <item id="Auchan3">Responsible for the whole intranet project, including graphics, front-end and back-end</item>
+  <item id="Auchan4">Development of a web application for time reporting and project management utilised by the Auchan IT division</item>
+  <item id="Auchan5">Restyling of the oldest websites</item>
+  <item id="Auchan6">Migration from VBScript to ASP.NET C#</item>
+  <item id="Auchan7">Development of administration pages covering user management, messages and news releases.</item>
+  <item id="AcTitle">IT Assistant (May 2007 - June 2007)</item>
+  <item id="AcDesc">Helpdesk support, internet connectivity and solving common network problems.</item>
+  <item id="PersonalProjectTitle">Personal Projects</item>
+  <item id="MyCookinTitle">Founder and CEO (April 2012 - Today)</item>
+  <item id="MyCookinDesc1">A </item>
+  <item id="MyCookinDesc2">
+    new social network about food, developed in C# 4.0. Great experience with JavaScript, jQuery, Web Services, T-SQL, Facebook and Twitter API.
+    I am currently rewriting the whole code from scratch using WCF Services, Entity Framework, MVC 5.
+  </item>
+  <item id="MyCookin1">Developer of the whole user interaction (User Profile, Security, Registration, Login, Wall, Messages, Notifications)</item>
+  <item id="MyCookin2">Proven ability to manage a start-up project, to be flexible and a team leader.</item>
+  <item id="MyCookin3">Good experience with Agile methodologies and System Development Life Cycle.</item>
+  <item id="MyCookin4">Responsible for the user experience and graphic design, for Facebook and Twitter content</item>
+  <item id="MyCookin5">Facebook advertising and analysis</item>
+  <item id="MyCookin6">Analysis of statistics with Google Analytics</item>
+  <item id="MyCookin7">Making presentations and pitches to promote the start-up</item>
+  <item id="MyCookin8">Use of Microsoft Visio work flows to avoid bugs and create documentation</item>
+  <item id="MyCookin9">Use of Microsoft Project to plan the job and to-do-list</item>
+  <item id="MyCookin10">Effective time management and workload scheduling</item>
+
+  <!--ABOUT ME-->
+  <item id="p1">
+    Alessio nasce a Palermo il 16 Marzo del 1983, un Mercoledì, intorno alle ore 12. <br />
+    Ma non se lo ricorda.<br />
+    E' del segno dei Pesci, con ascendente Cancro. E sebbene non creda tanto all'oroscopo e all'astrologia, crede che in qualche modo il mese di nascita possa almeno in parte influenzare la personalità di una persona.
+    <br />
+    Dopo  meno di 10 anni cambia casa trasferendosi da una via vicino Piazza Indipendenza, nel centro di Palermo, al quartiere di San Lorenzo, dal  lato opposto della città e in periferia.
+    <br />
+    Inizia con un  anno di anticipo le scuole elementari, frequenta il liceo scientifico e riesce a diplomarsi nel 2001 a soli 19 anni con una votazione di 73/100 (ma con un punto in meno che in teoria ancora dovrebbe farsi assegnare).
+  </item>
+  <item id="p2">
+    Tutti gli anni guadagnati durante il liceo, riuscendo a non bocciare mai, li perde durante la carriera universitaria. Riesce comunque a laurearsi in Ingegneria Informatica nel 2012 con una tesi dal titolo "Gestione Progetti e Time Report per una Società della Grande Distribuzione Organizzata".
+    <br />
+    E' negli anni del liceo che prende prima il nome d'arte "Zefiro", scelto da lui stesso in onore del famoso dio del vento che portava la primavera, e poi "Ale206" assegnatogli dal gruppo di amici che frequentava in quel periodo per via della macchina della madre (una Peugeot 206) con la quale andava in giro. Quest'ultimo nome è quello con il quale usava firmare le sue fotografie (passione che risale fin dai tempi in cui era bambino) e con il quale è  ancora riconosciuto da molti. Da un gruppo ristretto di persone è anche conosciuto come "Pizzino", ma per una storia ironica che preferisce non raccontare.
+  </item>
+  <item id="p3">
+    Frequenta un corso di Webmaster presso l'istituto ITI Vittorio Emanuele III di Palermo, con cui svolge un'attività di tirocinio presso la Neomedia ISP e uno di Sistemista presso la Clinica La Maddalena di Palermo. Studia per parecchi anni l'inglese e a partire dai 20 anni comincia a viaggiare, visitando parecchie capitali europee. Una passione, quella dei viaggi, che porta tutt'ora fin dai viaggi in macchina insieme alla sua famiglia.
+    <br />
+    Nel 2006 vive a Valencia, in Spagna, per 11 mesi grazie al progetto Erasmus. Lì vive  una delle esperienze più belle della sua vita e lo segnerà per tutti gli anni  futuri.
+    <br />
+    Tornato a Palermo nell'agosto del 2007, vive un  anno nella sua città, ma con uno spirito ormai "frenato" dopo  l'esperienza spagnola. Nell'agosto del 2008 trova lavoro (o come  afferma lui stesso "un lavoro trova lui") presso un'azienda informatica  di Milano, dove in fretta e furia si trasferisce e attualmente vive.
+    <br />
+    Dal 2008 al 2012 lavora come consulente informatico presso la sede centrale di Auchan Italia dove gestisce e amministra il portale intranet aziendale realizzato in linguaggio ASP e supportato da database MySql.
+    <br />
+    Da fine Novembre 2012 inizia a lavorare per Kiwari come sviluppatore .Net C# e, nel poco tempo libero che gli rimane, prosegue il suo progetto di MyCookin avviato nell'Aprile 2012 insieme al suo ex collega Saverio Cammarata.
+    <br />
+    A maggio del 2013, decide di darsi gli ultimi 6 mesi di tempo in Italia, sperando che la sua vita possa prendere una svolta in ambito lavorativo o sentimentale.
+    <br />
+    Ed in quei 6 mesi non succede assolutamente niente. Quindi il 5 Novembre (Remember, remember, the fifth of November) prende un aereo di sola andata per Londra, dove decide di reiniziare una nuova vita alla ricerca di investitori per MyCookin.
+    <br />
+    Prima di iniziare la sua avventura a Londra, però, trascorre due bellissime e intense settimane in giro per la Colombia.
+    <br />
+    MyCookin comincia ad essere conosciuto grazie alle interviste rilasciate per TgCom, Radio Capital, Radio Deejay e Vero. La giornata trascorre tra meeting, piccoli lavori da freelance, marketing, pitches e presentazioni in pubblico.
+    <br />
+    A Marzo però i soldi finiscono, MyCookin, purtroppo, viene messo da parte e inizia a lavorare per Orwell Group, un'azienda finanziaria nella City, dove lavora a quella che sara' la prima vera banca europea, Ipagoo.
+    <br/>
+    Ad Adazzle inizia la sua prima vera grande esperienza come Tech Lead, ma la mancanza dell'estate e le enormi distanze Londinesi cominciano a pesare.
+    <br/>
+    A distanza di un anno ha l'occasione di tornare in Spagna, a Barcellona, per lavorare per Kigo, un'azienda del gruppo RealPage nel settore Vacation Rental. Settore che più si addice alla sua personalità. Inizia quindi a sviluppare da zero l'architettura di un nuovo Channel Manager e vive felice e contento grazie ad un'azienda in crescita, croissants al cioccolato e quasi nove mesi d'estate.
+  </item>
+  <item id="p4">Breve Carriera Fotografica</item>
+  <item id="p5">
+    Il 20 Novembre 2009, espone le sue prime foto al Centro Italiano Attori di Milano partecipando ad una serata organizzata dalla Darko Production sul tema "La Notte" affiancando le sue stampe a musica dal vivo, video proiezioni e spettacoli di danza contemporanea.
+    <br />
+    Tra Giugno e Luglio 2010 organizza la sua seconda mostra fotografica intitolata MAROCCO - PARTICOLARI, prima ad attraversare tre grandi città italiane da nord a sud: Milano, Roma e Palermo. Alle  15 foto scattate durante il viaggio nello stato marocchino vissuto quasi interamente in macchina, all'avventura, affianca i racconti di Alessandro Barbaglia, i dipinti di Rosylia Loiudice, aperitivi marocchini e spettacoli di Danza del Ventre in collaborazione con Laura Kaimi,
+    <a href="http://zarakedanza.blogspot.com" target="_blank">Zara Danza Orientale</a> di Roma e
+    <a href="http://www.faridaonline.com" target="_blank">Farida Bissinger</a>, una delle danzatrici più conosciute in Svezia. Le foto esposte prima a Milano e poi al DodiciPose di Roma rimangono in mostra permanente ai Chiavettieri di Palermo fino a dicembre.
+    <br />
+    A Dicembre 2010 parte da Roma la sua terza esposizione fotografica in collaborazione con
+    <a href="http://www.saveriophoto.it/" target="_blank">Saverio Cammarata</a> intitolata 7PC - I SETTE PECCATI CAPITALI ed esposta all'Antica Biblioteca Valle grazie all'organizazzione di
+    <a href="http://www.romaevents.it" target="_blank">Luigi Damiani</a>. Anche questa, con 7 foto in still life e 7 ritratti, sarà una mostra itinerante e verrà esposta anche a Milano e a Palermo.
+    <br />
+    Sempre a Dicembre 2010 lavora per l'agenzia <a href="http://www.sognieventi.it" target="_blank">SogniEventi</a> di Milano ed è fotografo ufficiale all'evento "
+    <a href="http://www.sognieventi.it/dida.html">Fai Goal al tuo Campione - Alessia Ventura presenta Dida</a>" organizzato dal Comune di Milano e  realizzato in collaborazione con il CAF Onlus, Centro di Aiuto al Bambino maltrattato e alla Famiglia in crisi.
+  </item>
+  <item id="p6">Alla continua ricerca della particolarità e dell'originalità, ecco  Alessio in sintesi.</item>
+
+</lang>

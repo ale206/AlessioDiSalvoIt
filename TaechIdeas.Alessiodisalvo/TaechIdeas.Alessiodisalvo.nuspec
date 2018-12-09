@@ -1,0 +1,15 @@
+﻿<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>AlessiodisalvoWebPackage</id>
+    <title>Alessiodisalvo</title>
+    <version>1.0</version>
+    <authors>Alessio Di Salvo</authors>
+    <owners>Alessio Di Salvo</owners>
+    <licenseUrl>http://www.alessiodisalvo.it</licenseUrl>
+    <projectUrl>http://www.alessiodisalvo.it</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>AlessioDiSalvo</description>
+    <releaseNotes></releaseNotes>
+  </metadata>
+</package>
