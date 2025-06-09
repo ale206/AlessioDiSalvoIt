@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Tags -->
+    <title>Alessio Di Salvo - Software Engineering Manager</title>
+    <meta name="description" content="Personal portfolio of Alessio Di Salvo, a Software Engineering Manager in Barcelona, showcasing skills in .NET, agile management, and technical leadership.">
+    <meta name="keywords" content="Alessio Di Salvo, Software Engineering Manager, Technical Manager, .NET, Agile, Scrum, DevOps, Barcelona, Portfolio, CV, Resume">
+    <meta name="author" content="Alessio Di Salvo">
+    <link rel="canonical" href="https://www.alessiodisalvo.it">
+
+    <!-- Open Graph / LinkedIn -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.alessiodisalvo.it">
+    <meta property="og:title" content="Alessio Di Salvo - Software Engineering Manager">
+    <meta property="og:description" content="Personal portfolio of Alessio Di Salvo, a Software Engineering Manager in Barcelona, showcasing skills in .NET, agile management, and technical leadership.">
+    <meta property="og:image" content="assets/alessiodisalvo.png">
+
+    <!-- Styles and Scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+    
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section {
+            scroll-margin-top: 64px; /* Adjust this value based on your navbar height */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header & Navbar -->
+    <header class="bg-white/80 backdrop-blur-md fixed top-0 left-0 right-0 z-50 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-xl font-bold text-gray-900">Alessio Di Salvo</a>
+                </div>
+                <div class="hidden md:block">
+                    <nav class="flex items-center space-x-8">
+                        <a href="#home" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">Home</a>
+                        <a href="#skills" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">Skills</a>
+                        <a href="#about" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">About Me</a>
+                        <a href="#projects" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">Projects</a>
+                        <a href="#cv" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">CV</a>
+                    </nav>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" id="menu-icon-open" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                        <svg class="hidden h-6 w-6" id="menu-icon-close" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Home</a>
+                <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Skills</a>
+                <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">About Me</a>
+                <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Projects</a>
+                <a href="#cv" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">CV</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-16">
+        <!-- Home Section -->
+        <section id="home" class="section min-h-screen flex items-center bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+                <div class="grid grid-cols-1 md:grid-cols-5 gap-12 items-center">
+                    <div class="md:col-span-3 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                            Hi, I'm Alessio
+                        </h1>
+                        <h2 class="mt-4 text-2xl md:text-3xl text-indigo-600 font-semibold">
+                            Software Engineering Manager
+                        </h2>
+                        <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto md:mx-0">
+                            I’m passionate about building high-quality software through clean architecture, modern tech, and efficient practices. As an Engineering Manager, I focus on unblocking teams, refining processes, and fostering environments where engineers grow. I also write at Mind Refactor and created ModularNet, an open-source .NET starter kit.
+                        </p>
+                        <div class="mt-8 flex justify-center md:justify-start space-x-6">
+                            <a href="https://www.linkedin.com/in/alessio-di-salvo/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-indigo-600 transition-colors duration-300" aria-label="LinkedIn Profile">
+                                <i data-lucide="linkedin" class="w-8 h-8"></i>
+                            </a>
+                             <a href="https://github.com/ale206" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-indigo-600 transition-colors duration-300" aria-label="GitHub Profile">
+                                <i data-lucide="github" class="w-8 h-8"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="md:col-span-2 flex justify-center">
+                        <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl bg-indigo-100">
+                            <img src="assets/alessiodisalvo.png" 
+                                 alt="Avatar of Alessio Di Salvo"
+                                 class="w-full h-full object-cover"
+                                 onerror="this.onerror=null;this.src='https://placehold.co/400x400/E2E8F0/A0AEC0?text=Image+Error';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">My Skills</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4"><div class="bg-indigo-100 p-3 rounded-full"><i data-lucide="server" class="w-6 h-6 text-indigo-600"></i></div><h3 class="ml-4 text-xl font-semibold text-gray-800">Software Architecture</h3></div>
+                        <p class="text-gray-600">Designing modular, maintainable, and scalable systems using modern architecture patterns.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4"><div class="bg-indigo-100 p-3 rounded-full"><i data-lucide="users" class="w-6 h-6 text-indigo-600"></i></div><h3 class="ml-4 text-xl font-semibold text-gray-800">Engineering Management</h3></div>
+                        <p class="text-gray-600">Leading high-performing teams, improving delivery workflows, and fostering technical growth.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4"><div class="bg-indigo-100 p-3 rounded-full"><i data-lucide="refresh-cw" class="w-6 h-6 text-indigo-600"></i></div><h3 class="ml-4 text-xl font-semibold text-gray-800">Agile & Scrum</h3></div>
+                        <p class="text-gray-600">Driving efficient and iterative product development using Agile principles and Scrum ceremonies.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4"><div class="bg-indigo-100 p-3 rounded-full"><i data-lucide="code" class="w-6 h-6 text-indigo-600"></i></div><h3 class="ml-4 text-xl font-semibold text-gray-800">.NET Development</h3></div>
+                        <p class="text-gray-600">Building backend systems and APIs with .NET and C#, following clean architecture practices.</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4"><div class="bg-indigo-100 p-3 rounded-full"><i data-lucide="cloud-cog" class="w-6 h-6 text-indigo-600"></i></div><h3 class="ml-4 text-xl font-semibold text-gray-800">Cloud & DevOps</h3></div>
+                        <p class="text-gray-600">Deploying and monitoring applications using CI/CD pipelines, Docker, and cloud platforms.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300">
+                        <div class="flex items-center mb-4"><div class="bg-indigo-100 p-3 rounded-full"><i data-lucide="clipboard-check" class="w-6 h-6 text-indigo-600"></i></div><h3 class="ml-4 text-xl font-semibold text-gray-800">Recruiting</h3></div>
+                        <p class="text-gray-600">Building and expanding technical teams by identifying, interviewing, and hiring talented engineers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section py-20 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">About Me</h2>
+                <p class="mt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">
+                    I am a passionate Engineering Manager based in Barcelona. I specialize in leading and scaling high-performing software teams, delivering reliable and maintainable solutions while fostering a culture of collaboration and technical excellence. With a strong background in .NET technologies and Agile methodologies, I focus on improving processes, enabling continuous delivery, and supporting team members in their career growth. Besides engineering management, I enjoy sharing knowledge through writing and mentoring.
+                </p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center"><i data-lucide="gem" class="w-6 h-6 mr-3 text-indigo-600"></i>My Mission</h3>
+                        <p class="text-gray-600">I am committed to enabling teams to deliver high-quality software efficiently while fostering personal growth and technical leadership. Continuous learning, innovation, and clear communication are at the core of everything I do.</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center"><i data-lucide="star" class="w-6 h-6 mr-3 text-indigo-600"></i>Core Expertise</h3>
+                        <ul class="space-y-2 text-gray-600">
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>Technical Leadership & Mentorship</span></li>
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>Agile Methodologies & Scrum Mastery</span></li>
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>Full-Stack .NET Development</span></li>
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>System Architecture & Design</span></li>
+                            <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>CI/CD and DevOps Practices</span></li>
+                        </ul>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center"><i data-lucide="trophy" class="w-6 h-6 mr-3 text-indigo-600"></i>Key Initiatives</h3>
+                        <ul class="space-y-2 text-gray-600">
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>Pioneered and scaled the Dow Jones technology hub in Barcelona.</span></li>
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>Led high-performing teams of 5+ developers, providing mentorship and driving technical excellence.</span></li>
+                           <li class="flex items-start"><i data-lucide="check-circle-2" class="w-5 h-5 mr-2 mt-1 text-green-500 flex-shrink-0"></i><span>Designed and implemented a 3-layer architecture for a new Channel Manager at Kigo.</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Projects Section -->
+        <section id="projects" class="section py-20 bg-gray-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-3xl font-bold text-center text-gray-900">Personal Projects</h2>
+                <p class="mt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">A selection of projects I've founded and built</p>
+                <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-900">Mind Refactor</h3>
+                        <p class="text-indigo-600 font-medium mt-1">Writer & Editor</p>
+                        <p class="text-gray-600 mt-4 flex-grow">A publication about Programming, Agile, Management, Leadership and Career advice, where I share insights and experiences from the tech world.</p>
+                        <a href="http://mindrefactor.com" target="_blank" rel="noopener noreferrer" class="mt-4 text-indigo-600 hover:text-indigo-800 font-semibold inline-flex items-center">Visit Website <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-900">ModularNet</h3>
+                        <p class="text-indigo-600 font-medium mt-1">Creator</p>
+                        <p class="text-gray-600 mt-4 flex-grow">An open-source .NET starter kit designed to accelerate development by providing a clean, modular architecture out-of-the-box.</p>
+                        <a href="https://github.com/ale206/ModularNet" target="_blank" rel="noopener noreferrer" class="mt-4 text-indigo-600 hover:text-indigo-800 font-semibold inline-flex items-center">View on GitHub <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i></a>
+                    </div>
+                    <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-900">Eveski</h3>
+                        <p class="text-indigo-600 font-medium mt-1">Founder (Past Project)</p>
+                        <p class="text-gray-600 mt-4 flex-grow">Was a cross-platform mobile app (iOS/Android) built with Flutter and .NET 8, featuring secure authentication and ChatGPT integration.</p>
+                    </div>
+                     <div class="bg-white p-6 rounded-lg shadow-md flex flex-col">
+                        <h3 class="text-xl font-bold text-gray-900">MyCookin'</h3>
+                        <p class="text-indigo-600 font-medium mt-1">Founder & Team Lead (Past Project)</p>
+                        <p class="text-gray-600 mt-4 flex-grow">Served as the first international social network for food and recipes, which grew to over 1000 users and a Facebook page with 10k+ followers.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CV Section -->
+        <section id="cv" class="section py-20 bg-white">
+            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
+                <h2 class="text-3xl font-bold text-center text-gray-900">Curriculum Vitae</h2>
+                <p class="mt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">A detailed overview of my professional journey</p>
+                <div class="mt-12">
+                    <!-- Work Experience -->
+                    <div>
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Work Experience</h3>
+                        <div class="space-y-8 relative border-l-2 border-gray-200 ml-3">
+                             <div class="pl-10 relative mb-8">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">April 2019 - Present</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Manager, Software Engineering</h4>
+                                <p class="text-md text-gray-700 mb-3"><a href="https://www.dowjones.com/" target="_blank" rel="noopener noreferrer" class="hover:underline text-indigo-600">Dow Jones</a> - Barcelona, Spain</p>
+                                <ul class="space-y-2 text-gray-600 list-none">
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Pioneered the establishment and growth of Dow Jones' technology hub in Barcelona.</span></li>
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Led and scaled a high-performing team of 5+ engineers, fostering a culture of technical excellence.</span></li>
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Optimised development processes and release pipelines to improve efficiency and reliability.</span></li>
+                                </ul>
+                            </div>
+                             <div class="pl-10 relative mb-8">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">March 2017 - April 2019</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Technical Lead</h4>
+                                <p class="text-md text-gray-700 mb-3"><a href="https://www.guesty.com/?last_click=kigo" target="_blank" rel="noopener noreferrer" class="hover:underline text-indigo-600">Kigo (now a Guesty company)</a> - Barcelona, Spain</p>
+                                <ul class="space-y-2 text-gray-600 list-none">
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Designed and adopted a 3-layers architecture for a new Channel Manager.</span></li>
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Technically led the team, mentored junior developers, and expanded the team by hiring 3+ engineers.</span></li>
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Reached 85% of code coverage with unit tests.</span></li>
+                                </ul>
+                            </div>
+                             <div class="pl-10 relative mb-8">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">March 2016 - March 2017</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Technical Lead</h4>
+                                <p class="text-md text-gray-700 mb-3"><a href="https://www.freewheel.com/" target="_blank" rel="noopener noreferrer" class="hover:underline text-indigo-600">Adazzle (now FreeWheel)</a> - London, U.K.</p>
+                                <ul class="space-y-2 text-gray-600 list-none">
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Technically led a team of 9 people and mentored junior developers.</span></li>
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Promoted ReSharper as a tool to align naming conventions and improve code quality.</span></li>
+                                </ul>
+                            </div>
+                             <div class="pl-10 relative mb-8">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">March 2014 - Dec 2015</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Full Stack Developer</h4>
+                                <p class="text-md text-gray-700 mb-3">Orwell Group - London, U.K.</p>
+                                 <ul class="space-y-2 text-gray-600 list-none">
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Successfully built a new Payment Gateway Service for both FIAT and Crypto Currencies.</span></li>
+                                </ul>
+                            </div>
+                             <div class="pl-10 relative mb-8">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">Nov 2012 - Nov 2013</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Software Developer</h4>
+                                <p class="text-md text-gray-700 mb-3">Kiwari - Milan, Italy</p>
+                                 <ul class="space-y-2 text-gray-600 list-none">
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Developed 15+ PHP Facebook applications for major brands like Alitalia, Coop, and Ferrero.</span></li>
+                                </ul>
+                            </div>
+                             <div class="pl-10 relative">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">Aug 2008 - Nov 2012</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Webmaster</h4>
+                                <p class="text-md text-gray-700 mb-3">Auchan Italia - Milan, Italy</p>
+                                <ul class="space-y-2 text-gray-600 list-none">
+                                    <li class="flex items-start"><i data-lucide="arrow-right-circle" class="w-5 h-5 mr-2 mt-1 text-indigo-500 flex-shrink-0"></i><span>Served as the reference point for the Auchan Italy intranet, a key internal communication portal.</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Education -->
+                     <div class="mt-12">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Education</h3>
+                         <div class="space-y-8 relative border-l-2 border-gray-200 ml-3">
+                             <div class="pl-10 relative">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">2012</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Bachelor's Degree in Computer Engineering</h4>
+                                <p class="text-md text-gray-700"><a href="https://www.unipa.it/" target="_blank" rel="noopener noreferrer" class="hover:underline text-indigo-600">University Of Palermo</a> - Palermo, Italy</p>
+                            </div>
+                             <div class="pl-10 relative">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">2007</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">Erasmus Student, Computer Engineering</h4>
+                                <p class="text-md text-gray-700"><a href="https://www.upv.es/" target="_blank" rel="noopener noreferrer" class="hover:underline text-indigo-600">Universidad Politécnica De Valencia</a> - Valencia, Spain</p>
+                            </div>
+                        </div>
+                    </div>
+                     <!-- Volunteer Experience -->
+                     <div class="mt-12">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-6">Volunteer Experience</h3>
+                         <div class="space-y-8 relative border-l-2 border-gray-200 ml-3">
+                             <div class="pl-10 relative">
+                                <div class="absolute -left-3.5 top-1.5 w-6 h-6 bg-indigo-600 rounded-full border-4 border-white"></div>
+                                <p class="font-semibold text-gray-500">May 2007 - June 2007</p>
+                                <h4 class="text-xl font-bold text-gray-900 mt-1">IT Assistant</h4>
+                                <p class="text-md text-gray-700 mb-3"><a href="https://www.americascup.com/" target="_blank" rel="noopener noreferrer" class="hover:underline text-indigo-600">32nd America's Cup</a> - Valencia, Spain</p>
+                                <p class="text-gray-600">Provided help-desk support, internet connectivity, and configuration for staff and journalists attending the competition.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="mt-12 text-center">
+                    <a href="assets/CV_AlessioDiSalvo.pdf" download="CV_AlessioDiSalvo.pdf" class="inline-block bg-indigo-600 text-white font-bold py-3 px-8 rounded-lg hover:bg-indigo-700 transition-colors duration-300 shadow-lg">
+                        Download Full CV
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="bg-gray-50 border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-gray-500">
+           <p>&copy; 2025 Alessio Di Salvo. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Lucide Icons
+        lucide.createIcons();
+
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIconOpen = document.getElementById('menu-icon-open');
+        const menuIconClose = document.getElementById('menu-icon-close');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            menuIconOpen.classList.toggle('hidden');
+            menuIconClose.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIconOpen.classList.remove('hidden');
+                menuIconClose.classList.add('hidden');
+            });
+        });
+
+        // Active Nav Link Highlighting on Scroll
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('a.nav-link');
+        
+        window.addEventListener('scroll', () => {
+            let current = 'home'; // Default to home
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if(pageYOffset >= sectionTop - 70) { // 64px navbar height + 6px margin
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-indigo-600', 'font-semibold');
+                link.classList.add('text-gray-600');
+                if (link.href && link.href.split('#')[1] === current) {
+                    link.classList.add('text-indigo-600', 'font-semibold');
+                    link.classList.remove('text-gray-600');
+                }
+            });
+        });
+
+        // Set initial active link
+        window.dispatchEvent(new Event('scroll'));
+    </script>
+</body>
+</html>
