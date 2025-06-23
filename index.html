@@ -32,12 +32,26 @@
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="manifest" href="/assets/site.webmanifest">
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DZ3821G2GS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-DZ3821G2GS');
+    </script>
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
         }
         .section {
             scroll-margin-top: 64px; /* Adjust this value based on your navbar height */
+        }
+        .tab-active {
+            border-bottom-color: #4f46e5; /* indigo-600 */
+            color: #111827; /* gray-900 */
         }
     </style>
 </head>
@@ -56,6 +70,7 @@
                     <a href="#skills" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">Skills</a>
                     <a href="#about" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">About Me</a>
                     <a href="#projects" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">Projects</a>
+                    <a href="#books" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">Books</a>
                     <a href="#cv" class="nav-link text-gray-600 hover:text-indigo-600 transition-colors duration-300">CV</a>
                 </nav>
             </div>
@@ -79,6 +94,7 @@
             <a href="#skills" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Skills</a>
             <a href="#about" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">About Me</a>
             <a href="#projects" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Projects</a>
+            <a href="#books" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">Books</a>
             <a href="#cv" class="mobile-nav-link block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-indigo-600 hover:bg-gray-50">CV</a>
         </div>
     </div>
@@ -233,8 +249,36 @@
         </div>
     </section>
 
+    <!-- Recommended Books Section -->
+    <section id="books" class="section py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center text-gray-900">Recommended Books</h2>
+            <p class="mt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">
+                A curated list of books that have influenced my thinking on technology, leadership, and personal growth.
+            </p>
+            <div class="mt-12">
+                <div class="border-b border-gray-200">
+                    <nav class="-mb-px flex justify-center space-x-8" aria-label="Tabs">
+                        <button data-category="tech" class="book-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                            Tech & Architecture
+                        </button>
+                        <button data-category="leadership" class="book-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                            Leadership & Management
+                        </button>
+                        <button data-category="growth" class="book-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                            Personal Growth
+                        </button>
+                    </nav>
+                </div>
+                <div id="book-container" class="mt-8">
+                    <!-- Book cards will be injected here by JavaScript -->
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- CV Section -->
-    <section id="cv" class="section py-20 bg-white">
+    <section id="cv" class="section py-20 bg-gray-50">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-left">
             <h2 class="text-3xl font-bold text-center text-gray-900">Curriculum Vitae</h2>
             <p class="mt-4 text-lg text-gray-600 text-center max-w-3xl mx-auto">A detailed overview of my professional journey</p>
@@ -378,6 +422,67 @@
             menuIconClose.classList.add('hidden');
         });
     });
+
+    // Book Recommendations
+    const books = {
+        tech: [
+            { title: 'Clean Architecture', author: 'Robert C. Martin', description: 'A craftsman\'s guide to software structure and design. Essential for building maintainable and scalable systems.' },
+            { title: 'Clean Code', author: 'Robert C. Martin', description: 'A handbook of agile software craftsmanship that will help you write better code.' },
+        ],
+        leadership: [
+            { title: 'The Manager\'s Path', author: 'Camille Fournier', description: 'A Guide for Tech Leaders Navigating Growth and Change.' },
+            { title: '97 Things Every Engineering Manager Should Know', author: 'Various Authors', description: 'Collective wisdom from a wide range of experienced engineering managers.' },
+            { title: 'The Manager\'s Handbook', author: 'Harvard Business Review', description: 'A practical guide covering the skills leaders need to stand out.' },
+            { title: 'HBR Guide to Performance Management', author: 'Harvard Business Review', description: 'Expert advice on how to give feedback and coach direct reports.' },
+            { title: 'HBR Guide to Leading Teams', author: 'Harvard Business Review', description: 'Proven strategies for building and managing a high-performing team.' },
+            { title: 'HBR Guide to Emotional Intelligence', author: 'Harvard Business Review', description: 'Improve your social skills, manage your emotions, and build stronger relationships.' },
+        ],
+        growth: [
+            { title: 'The Art of War', author: 'Sun Tzu', description: 'An ancient classic of strategy and philosophy that can be applied to modern challenges.' },
+        ],
+    };
+
+    const bookContainer = document.getElementById('book-container');
+    const bookTabs = document.querySelectorAll('.book-tab');
+
+    function renderBooks(category) {
+        bookContainer.innerHTML = '';
+        const booksToRender = books[category];
+        const grid = document.createElement('div');
+        grid.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8';
+
+        booksToRender.forEach(book => {
+            const card = document.createElement('div');
+            card.className = 'bg-gray-50 p-6 rounded-lg shadow-sm';
+            card.innerHTML = `
+                    <h3 class="text-xl font-bold text-gray-900">${book.title}</h3>
+                    <p class="text-indigo-600 font-medium mt-1">by ${book.author}</p>
+                    <p class="text-gray-600 mt-4">${book.description}</p>
+                `;
+            grid.appendChild(card);
+        });
+        bookContainer.appendChild(grid);
+    }
+
+    bookTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+            const category = tab.dataset.category;
+
+            bookTabs.forEach(t => {
+                t.classList.remove('tab-active', 'border-indigo-600', 'text-gray-900');
+                t.classList.add('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300');
+            });
+
+            tab.classList.add('tab-active', 'border-indigo-600', 'text-gray-900');
+            tab.classList.remove('text-gray-500', 'hover:text-gray-700', 'hover:border-gray-300');
+
+            renderBooks(category);
+        });
+    });
+
+    // Initial render
+    bookTabs[0].click();
+
 
     // Active Nav Link Highlighting on Scroll
     const sections = document.querySelectorAll('section');
