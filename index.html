@@ -266,11 +266,11 @@
             <div class="mt-12">
                 <div class="border-b border-gray-200">
                     <nav class="-mb-px flex justify-center space-x-8" aria-label="Tabs">
-                        <button data-category="tech" class="book-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
-                            Tech & Architecture
-                        </button>
                         <button data-category="leadership" class="book-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
                             Leadership & Management
+                        </button>
+                        <button data-category="tech" class="book-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
+                            Tech & Architecture
                         </button>
                         <button data-category="growth" class="book-tab whitespace-nowrap py-4 px-1 border-b-2 font-medium text-sm text-gray-500 hover:text-gray-700 hover:border-gray-300">
                             Personal Growth
@@ -402,7 +402,7 @@
             <div id="faq-container" class="mt-12 space-y-4">
                 <!-- FAQ items will be injected here -->
             </div>
-            <p class="mt-8 text-center text-gray-600">If you have any questions or want to know more about me or my work, feel free to get in touch—I’m always happy to connect.</p>
+            <p class="mt-8 text-center text-gray-600">If you have any questions or want to know more about me or my work, feel free to get in touch. I’m always happy to connect.</p>
         </div>
     </section>
 </main>
@@ -443,10 +443,6 @@
 
     // Book Recommendations
     const books = {
-        tech: [
-            { title: 'Clean Architecture', author: 'Robert C. Martin', description: 'A craftsman\'s guide to software structure and design. Essential for building maintainable and scalable systems.' },
-            { title: 'Clean Code', author: 'Robert C. Martin', description: 'A handbook of agile software craftsmanship that will help you write better code.' },
-        ],
         leadership: [
             { title: 'Transformed', author: 'Marty Cagan', description: 'How to Build a Startup into a Unicorn.' },
             { title: 'The Manager\'s Path', author: 'Camille Fournier', description: 'A Guide for Tech Leaders Navigating Growth and Change.' },
@@ -456,6 +452,10 @@
             { title: 'HBR Guide to Leading Teams', author: 'Harvard Business Review', description: 'Proven strategies for building and managing a high-performing team.' },
             { title: 'HBR Guide to Emotional Intelligence', author: 'Harvard Business Review', description: 'Improve your social skills, manage your emotions, and build stronger relationships.' },
             { title: 'How to Deal with Difficult People', author: 'Harvard Business Review', description: 'Practical strategies for managing conflict and difficult personalities.' },
+        ],
+        tech: [
+            { title: 'Clean Architecture', author: 'Robert C. Martin', description: 'A craftsman\'s guide to software structure and design. Essential for building maintainable and scalable systems.' },
+            { title: 'Clean Code', author: 'Robert C. Martin', description: 'A handbook of agile software craftsmanship that will help you write better code.' },
         ],
         growth: [
             { title: 'The Art of War', author: 'Sun Tzu', description: 'An ancient classic of strategy and philosophy that can be applied to modern challenges.' },
